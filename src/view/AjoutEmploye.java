@@ -21,6 +21,7 @@ public class AjoutEmploye extends JPanel {
 
         this.tableau = tableau;
         fenetre.setLocationRelativeTo(null);
+        fenetre.setTitle("Ajout d'employes");
         JButton ajouter = new JButton("Ajouter l'employe a la liste");
 
         JButton retour = new JButton(" retour dasboard");

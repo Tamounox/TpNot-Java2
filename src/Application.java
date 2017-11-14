@@ -1,9 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-
 import static javax.swing.SwingUtilities.invokeLater;
-
 import model.*;
 import view.*;
 
@@ -50,8 +48,7 @@ public class Application {
         fenetre.getContentPane().setLayout(new FlowLayout());
         fenetre.getContentPane().add(afficher);
         fenetre.getContentPane().add(ajouter);
-
-        //fenetre.pack();
+        
         fenetre.setVisible(true);
     }
 }

@@ -4,8 +4,8 @@ public class Vendeur extends Employe {
 
 
     @Override
-    void calculerSalaire() {
-        salaire = (((baseCalcul * 20)/100) + 400);
+    public double calculerSalaire() {
+        return(((baseCalcul * 20)/100) + 400);
     }
 
 

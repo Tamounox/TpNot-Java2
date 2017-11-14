@@ -6,10 +6,10 @@ public abstract class Employe{
     Integer age;
     String dateEntree;
     int baseCalcul;
-    int salaire;
+    double salaire;
 
 
-    abstract void calculerSalaire();
+    public abstract double calculerSalaire();
 
     public Employe(String prenom, String nom, int age, String date, int baseCalcul){
         this.prenom = prenom;
@@ -17,7 +17,7 @@ public abstract class Employe{
         this.age = age;
         this.dateEntree = date;
         this.baseCalcul=baseCalcul;
-        calculerSalaire();
+        this.salaire = calculerSalaire();
     }
 
     public String getNomretournant () {
@@ -49,7 +49,7 @@ public abstract class Employe{
         return baseCalcul;
     }
 
-    public int getSalaire() {
+    public double getSalaire() {
         return salaire;
     }
 

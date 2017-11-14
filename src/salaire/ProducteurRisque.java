@@ -4,8 +4,8 @@ public class ProducteurRisque extends Producteur {
 
 
     @Override
-    void calculerSalaire() {
-        salaire = ((baseCalcul * 5) + 200);
+    public double calculerSalaire() {
+        return ((baseCalcul * 5) + 200);
     }
 
     public ProducteurRisque (String prenom, String nom, int age, String date, int base) {

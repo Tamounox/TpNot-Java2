@@ -7,7 +7,7 @@ public class Dashboard extends JPanel{
 
         this.setVisible(true);
         fenetre.setLocationRelativeTo(null);
-
+        fenetre.setTitle("Dashboard");
         JButton ajouter = new JButton("Ajouter employe");
         JButton afficher = new JButton("Afficher employes");
 

@@ -2,12 +2,13 @@ package view;
 
 import model.*;
 import salaire.ManutentionRisque;
-
+import model.ModeleDynamique;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.StringWriter;
 
-    public class AfficherTableau extends JPanel {
+public class AfficherTableau extends JPanel {
 
         private final JTable tableau;
 
@@ -31,6 +32,15 @@ import java.awt.event.ActionEvent;
 
             fenetre.getContentPane().add(retour);
             fenetre.setVisible(true);
+
+            ModeleDynamique model = (ModeleDynamique) tableau.getModel();
+            double salaireMoyen = model.salaireMoyen();
+            System.out.println(salaireMoyen);
+
+            JLabel salaire = new JLabel("Salaire moyen = " + salaireMoyen);
+            fenetre.getContentPane().add(salaire);
+
+
 
 
         }

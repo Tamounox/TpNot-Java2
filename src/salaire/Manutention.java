@@ -4,8 +4,8 @@ public class Manutention extends Employe {
 
 
     @Override
-    void calculerSalaire() {
-        salaire = (baseCalcul*65);
+    public double calculerSalaire() {
+        return (baseCalcul*65);
     }
 
     public Manutention (String prenom, String nom, int age, String date, int base) {

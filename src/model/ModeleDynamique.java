@@ -5,6 +5,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import salaire.*;
+import view.AfficherTableau;
 
 public class ModeleDynamique extends AbstractTableModel {
     // private final personel listeEntreprise = new personel();
@@ -27,7 +28,6 @@ public class ModeleDynamique extends AbstractTableModel {
     public int getRowCount() {
        return listeEntreprise.size();
     }
-
 
     public int getColumnCount() {
         return entetes.length;
@@ -62,6 +62,15 @@ public class ModeleDynamique extends AbstractTableModel {
         listeEntreprise.add(employe);
         fireTableRowsInserted(listeEntreprise.size() -1, listeEntreprise.size() -1);
     }
+
+    public double salaireMoyen() {
+        double total = 0;
+        for (Employe employee: listeEntreprise) {
+            total += employee.calculerSalaire();
+        }
+        return total / listeEntreprise.size();
+    }
+
 
 
 }
