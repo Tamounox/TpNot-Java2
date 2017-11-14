@@ -21,7 +21,6 @@ public class AjoutEmploye extends JPanel {
 
         this.tableau = tableau;
         fenetre.setLocationRelativeTo(null);
-        fenetre.setSize(800,600);
         JButton ajouter = new JButton("Ajouter l'employe a la liste");
 
         JButton retour = new JButton(" retour dasboard");
@@ -112,7 +111,7 @@ public class AjoutEmploye extends JPanel {
             default:
                 System.out.println("Ajout Impossible, type inconnu");
         }
-        
+
         System.out.println("ajoute !");
 
     }

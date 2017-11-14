@@ -17,7 +17,7 @@ public class Application {
 
     public static void windows(){
         JFrame fenetre = new JFrame("Application");
-        fenetre.setSize(500,500);
+        fenetre.setSize(600,600);
         fenetre.setLocationRelativeTo(null);
         fenetre.setDefaultCloseOperation(fenetre.EXIT_ON_CLOSE);
 

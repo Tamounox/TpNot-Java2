@@ -19,13 +19,6 @@ import java.awt.event.ActionEvent;
 
                 fenetre.getContentPane().add(new JScrollPane(tableau), BorderLayout.CENTER);
 
-                JPanel boutons = new JPanel();
-
-                boutons.add(new JButton(new AddAction()));
-
-                fenetre.getContentPane().add(boutons, BorderLayout.SOUTH);
-
-                fenetre.pack();
 
             JButton retour = new JButton(" retour dasboard");
             retour.addActionListener(tab -> {
@@ -46,16 +39,7 @@ import java.awt.event.ActionEvent;
             new JTableBasiqueAvecModeleDynamiqueObjet().setVisible(true);
         }
 
-        private class AddAction extends AbstractAction {
-            private AddAction() {
-                super("Ajouter");
-            }
 
-            public void actionPerformed(ActionEvent e) {
-                ModeleDynamique model = (ModeleDynamique) tableau.getModel();
-                model.addEmploye(new ManutentionRisque("Antoine", "Gaston", 20, "2010", 45));
-            }
-        }
 
 
 

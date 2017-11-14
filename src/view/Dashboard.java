@@ -7,7 +7,6 @@ public class Dashboard extends JPanel{
 
         this.setVisible(true);
         fenetre.setLocationRelativeTo(null);
-        fenetre.setSize(500,500);
 
         JButton ajouter = new JButton("Ajouter employe");
         JButton afficher = new JButton("Afficher employes");
@@ -31,7 +30,6 @@ public class Dashboard extends JPanel{
         fenetre.getContentPane().add(afficher);
         fenetre.getContentPane().add(ajouter);
 
-        fenetre.pack();
 
     }
 
